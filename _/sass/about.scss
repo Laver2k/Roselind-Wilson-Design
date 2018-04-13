@@ -1,0 +1,160 @@
+#team-intro {
+  margin-bottom:110px;
+  
+  h2, p {
+    max-width:660px;
+    margin:0 auto; 
+  }
+}
+
+#footer-gus {
+  margin-bottom:-100px;
+}
+
+
+/* Directors */
+
+
+#geraldine-bio.hidden-content .director-details, #roselind-bio.hidden-content .director-details {
+ display:none;
+}
+
+#geraldine-bio .director-details, #roselind-bio .director-details {
+ display:inline-block;
+}
+
+#geraldine-bio.hidden-content .director-more-link img, #roselind-bio.hidden-content .director-more-link img {
+  transform:rotate(0deg);
+}
+
+#geraldine-bio .director-more-link img, #roselind-bio .director-more-link img {
+  transform:rotate(180deg);
+}
+
+
+#hide-geraldine-bio, #hide-ros-bio {
+  cursor: pointer;
+  transition:1s;
+}
+
+.director-summary {
+  overflow: hidden;
+  background-color:$white;
+}
+
+.director-intro {
+  background-color:$dark;
+}
+
+.director-details {
+  background-color:$white;
+  width:100%;
+
+}
+
+.director-intro p, .director-details p {
+  margin-top:0px;
+}
+
+.director-more-link img {
+  margin-left:5px;
+}
+
+
+/* Team Member List */
+
+#meet-the-team {
+  padding-top:40px;
+}
+
+#team-list {
+  background-color:$white;
+  width:100%;
+
+  display:inline-block;
+  box-sizing:border-box;
+  padding:30px 0px 0px 0px;
+
+  margin:-40px auto 50px auto;
+  @include min-em(500) {
+    padding:40px 50px 0px 50px;
+  }
+
+  @include min-em(950) {
+    width:960px;
+    padding:50px 150px 0px 150px;
+      margin:-40px auto 90px auto;
+  }
+}
+
+.team-member {
+  width:100%;
+  overflow: hidden;
+  margin-bottom:20px;
+  @include min-em(500) {
+  margin-bottom:30px;
+  }
+}
+
+.team-member-intro {
+  text-align:center;
+  @include min-em(500) {
+  width:50%;
+  float:left;
+  text-align:left;
+  }
+}
+
+.team-member-intro img {
+  margin-bottom:30px;
+  @include min-em(500) {
+  margin-bottom:0px;
+  }
+}
+
+.team-member-description {
+  padding:0 20px;
+  text-align:left;
+  @include min-em(500) {
+  width:45%;
+  float:left;
+  padding:0 0 0 5%;
+  }
+}
+
+
+/* Awards */
+
+#latest-awards {
+  background-color:$dirty-white;
+  text-align: center;
+}
+
+#awards-box {
+  background-color:$white;
+  display: inline-block;
+  span {
+    display:inline-block;
+    background-color: $beige;
+    padding: 20px 30px;
+    margin-top:-30px;
+  }
+}
+
+.award-set {
+  display: inline-block;
+  float:left;
+  text-align:center;
+  width:50%;
+  padding:15px;
+  box-sizing:border-box;
+  @include min-em(1000) {
+    width:50%;
+    padding:50px 0px 80px 0px;
+  }
+  img {
+    max-width:100%;
+  }
+
+}
+

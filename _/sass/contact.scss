@@ -1,0 +1,146 @@
+#contact-intro {
+  padding-bottom:40px;
+}
+
+/* Contact form */
+
+#contact-wrapper {
+  overflow: hidden;  
+  box-sizing:border-box;
+  padding:0 30px;
+  display: inline-block;
+  @include min-em(950) {
+    padding:0 150px;
+  }
+}
+
+#contact-form {
+  background-color:$green;
+  /*padding-top:10px;*/
+  padding:30px;
+  box-sizing:border-box;
+    @include min-em(700) {
+      width:50%;
+      float:left;
+    }
+}
+
+#contact-form form {
+  padding-top:10px;
+  padding-bottom:20px;
+
+}
+
+#contact-form textarea {
+  height:100px;
+}
+
+#contact-form button {
+  margin:10px 0 15px 0;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"],  #contact-form textarea {
+  padding:10px;
+  box-sizing:border-box;
+  margin-bottom:20px; 
+}
+
+input[type="submit"] {
+  border:0;
+  background-color:$dark;
+  color:$white;
+  text-transform:uppercase;
+  font-family:$secondary-font;
+  padding:15px 45px;
+  transition:0.4s;
+  &:hover {
+  background-color:lighten($dark, 10%);
+  }
+}
+
+#contact-description {
+    @include min-em(700) {
+      width:50%;
+      float:left;
+      padding:0 30px 0 0px;
+      box-sizing:border-box;
+    }
+}
+
+.wpcf7 {
+  input[type="text"], input[type="email"], textarea {
+    width:90%;
+    border:0;
+    margin-bottom:10px;
+
+  }
+}
+
+/* Map */
+
+#map-wrapper {
+  width:100%;
+  overflow:hidden;
+  background-color:$dark; 
+  padding-top:30px;
+  padding-bottom:30px;
+  @include min-em(800) {
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+
+  #map-container {
+    background-color: $dark;
+    box-sizing:border-box;
+    width:100%;
+
+    @include min-em(800) {
+    width:50%;
+    float:left;
+    padding:20px 0;
+    }
+
+    @include min-em(1000) {
+    padding:0;
+    }
+  }
+
+  #address {
+    width:100%; 
+    background-color:$dark;
+    display:flex;
+    align-items:center;
+    @include min-em(800) {
+    width:50%;
+    float:left;
+    box-sizing:border-box;
+    }
+  }
+
+  #address div {
+    width:80%;
+    padding:0 10%;
+  }
+  
+  #map {
+    margin:0 auto;
+    height: 320px;
+    width: 320px;
+    @include min-em(500) {
+    height: 500px;
+    width: 500px;
+    }
+
+    @include min-em(800) {
+    height: 400px;
+    width: 400px;
+    }
+
+    @include min-em(1000) {
+    height: 500px;
+    width: 500px;
+    }
+
+  }
+
+}

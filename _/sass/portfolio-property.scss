@@ -1,0 +1,283 @@
+.post-type-archive-portfolio #wrapper, .portfolio-template-default #wrapper {
+  @include no-header-padding;
+}
+
+
+/* Portoflio list */
+
+#page-portfolio-index.page-wrapper {
+  padding-top:40px !important;
+  @include min-em(800) {
+  padding-top:80px !important;
+  }
+
+}
+
+.property-link {
+
+  width:90%;
+  padding: 30px 5% 30px 5%;
+  text-align:center;
+  box-sizing:border-box;
+  background-image:url('../rwd/_/img/misc/gold-bg.png');
+
+  @include min-em(700) {
+  width:90%;
+  padding: 50px 5%;
+  }
+
+  @include min-em(1020) {
+  width:645px;
+  padding: 50px 5%;
+
+  }
+
+}
+
+
+#page-portfolio-index {
+  background-color:$dirty-white;
+  text-align: center;
+  padding-top: 42px;
+
+  .index-property {
+    margin-bottom:20px;
+    position: relative; 
+    @include min-em(700) {
+    margin-bottom:43px;
+    }
+
+    img {
+      height:auto;
+    }
+  }
+
+  .property-link {
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 50%;                         /* vertical alignment */
+    transform: translate(-50%, -50%); /* precise centering; see link below */
+    text-align:center;
+  }
+}
+
+
+
+#page-portfolio-index div.index-property:last-child {
+  margin-bottom:0;
+}
+
+/* single portfolio page */
+
+
+#property-title {
+  width:100%;
+  background-color:$beige;
+
+  padding-top:50px;
+  padding-bottom:30px;
+  box-sizing:border-box;
+  padding-left:20px;
+  padding-right:20px;
+
+  @include min-em(900) {
+  padding-top:70px;
+  padding-bottom:50px; 
+  }
+}
+
+#portfolio-hero {
+  width:100%;
+}
+
+#property-hero img {
+  width:100%;
+  height:auto;
+}
+
+#digital-render {
+  @include min-em(900) {
+    margin-top:10px;
+  }
+}
+
+#portfolio-3d {
+  background-color:$dirty-white;
+  text-align:center;
+  padding:30px 0 30px 0;
+  @include min-em(900) {
+  padding:50px 0 70px 0;
+  }
+
+  p {
+    max-width:660px;
+    margin:0 auto 40px auto;
+    padding:0 40px;
+  }
+  img {
+    width:100%;
+  }
+}
+
+#portfolio-image-double {
+  width:100%;
+  overflow:hidden;
+}
+
+.portfolio-single-block {
+  width:50%;
+  float:left;
+  img {
+    width:100%;
+  }
+}
+
+.portfolio-image-single {
+  width:100%;
+  img {
+    width:100%;
+  }
+}
+
+
+.portfolio-image-double {
+  .portfolio-single-block:first-child {
+    border-right:1px solid $dirty-white;
+    border-top:1px solid $dirty-white;
+    border-bottom:1px solid $dirty-white;
+    box-sizing:border-box;
+  }
+  .portfolio-single-block:last-child {
+    border-left:1px solid $dirty-white;
+    border-top:1px solid $dirty-white;
+    border-bottom:1px solid $dirty-white;
+    box-sizing:border-box;
+  }
+}
+
+.custom-slider {
+  border-top:1px solid $dirty-white;
+}
+
+.portfolio-text-block {
+  background-color:$dirty-white;
+}
+
+.portfolio-text-block  {
+  text-align:center;
+  box-sizing:border-box;
+  padding:30px 20px;
+  display: inline-block;
+  width: 100%;
+  @include min-em(900) {
+  padding:60px 20px;
+  }
+}
+
+.portfolio-text-block p {
+  margin: 0 auto;
+  padding:0px 20px;
+  box-sizing:border-box;
+  max-width:660px;
+}
+
+#page-portfolio-single {
+  #property-title h2 {
+    color:$white;
+    @include title-sizing;
+    margin-top:0;
+    margin-bottom:0;
+  }
+}
+
+#page-portfolio-single img {
+  height:auto;
+}
+
+
+.portfolio-testimonials {
+  background-color:$dark;
+  text-align: center;
+  padding-bottom:80px;
+}
+
+.testimonial-box {
+  background-color:$white;
+  width:90%;
+  margin:-35px auto 0 auto;
+  display: inline-block;
+  box-sizing:border-box;
+  padding:20px 30px;
+  @include min-em(800) {
+  padding:40px 140px 30px 140px;
+  margin:-85px auto 0 auto;
+  }
+}
+
+#back-to-portfolio {
+  padding-top:50px;
+}
+
+
+
+#cta-bar {
+  background-color:$green;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:50px;
+}
+
+
+
+#portfolio-summary {
+
+  overflow: hidden;
+  text-align:center;
+
+  @include min-em(800) {
+    display:flex;
+    width:100%;
+  }
+
+  #portfolio-intro {
+
+    background-color:$dark;
+    align-self: center;
+    padding:40px 30px;
+    box-sizing:border-box;
+    p {
+      max-width:700px;
+      margin:0 auto;
+    }
+
+    @include min-em(800) {
+      width:50%;
+      float:left;
+    }
+
+  }
+
+
+  #portfolio-awards {
+    background-color:$white;
+    padding:20px 20px;
+    box-sizing:border-box;
+
+    @include min-em(800) {
+      width:50%;
+      float:left;
+      display:flex;
+      justify-content: center;
+    }
+
+    div {
+      align-self:center;
+    }
+  }
+
+  #portfolio-awards img {
+    height:auto;
+  }
+
+}
+

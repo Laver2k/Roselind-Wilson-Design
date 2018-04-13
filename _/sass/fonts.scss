@@ -1,0 +1,738 @@
+/* Fonts */
+@font-face {
+  font-family: 'domaine-semi';
+  src:  url('_/css/fonts/DomaineDispSemibold.woff2') format('woff2'),
+        url('_/css/fonts/DomaineDispSemibold.woff') format('woff');
+}
+
+body, div, p, span, form, input {
+  font-family: $body-font;
+  color:#000;
+  font-weight:300;
+  font-size:16px;
+}
+ 
+
+/* General */
+.dark-background h2 {
+	color:$white;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+button {
+	border:0;
+	background-color:$dark;
+	color:$white;
+	text-transform:uppercase;
+	font-family:$secondary-font;
+	font-size:16px;
+	padding:15px 45px;
+	transition:0.4s;
+	&:hover {
+	background-color:lighten($dark, 10%);
+	}
+}
+
+#wpadminbar * {
+	color:$white;
+}
+/* Featured in */
+
+#featured-in-box span {
+	color:$white;
+	@include title-sizing;
+}
+
+
+/* Header / Nav */
+.post-type-archive-portfolio li.current_page_parent, .single-portfolio li.current_page_parent {
+	border-bottom:5px solid $white;
+}
+
+nav { 
+	li {
+		padding-bottom:18px;
+		border-bottom:5px solid $white;
+	}
+
+	li.current-menu-item, li.current_page_parent {
+		border-bottom:5px solid $beige;
+	}
+
+
+
+	a {
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		color: $dark;
+		font-size:14px;
+		text-decoration: none;
+		&:hover {
+			text-decoration: underline;
+		}
+
+	}
+
+	.current-menu-item a {
+		color: $beige;
+	}
+}
+
+nav#category-nav {
+
+	li {
+    border-bottom: 5px solid $beige;
+	    &.current-menu-item {
+	        border-bottom: 5px solid $white;	
+	    }
+	}
+	li a {
+		color:$white;
+	}
+}
+
+
+#show-mobile-menu {
+	font-family: $secondary-font;
+	text-transform: uppercase;
+	color: $dark;
+	font-size:14px;	
+}
+
+#mobile-nav li a {
+	color: $white;
+	font-size:15px;
+}
+
+#close-button {
+	color:$white;
+	font-size:35px;
+}
+
+/* Homepage */
+#homepage-interior-design .right p {
+	color:$dark;
+}
+
+#homepage-interior-design .right div {
+	max-width:80%;
+	@include min-em(1400) {
+	max-width:640px;
+	}
+}
+
+#homepage-interior-design h3 {
+	@include title-sizing;
+	color:$beige;
+
+	margin-top:0;
+	margin-bottom:20px;
+
+}
+
+#homepage-interior-design p {
+	@include body-copy-sizing;
+	margin-top:0;
+	margin-bottom:30px;
+}
+
+#homepage-blog-preview h2 {
+	color:$white;
+	margin-bottom:30px;
+	@include title-sizing;
+
+}
+
+#homepage-blog-preview p, #homepage-blog-preview h3 {
+	width:80%; 
+	margin:0 auto;
+}
+
+#homepage-excerpt-wrapper p {
+	@include body-copy-sizing;
+	margin-bottom:30px;
+}
+
+#homepage-excerpt-wrapper a {
+	text-decoration:none;
+	color:$beige;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#homepage-excerpt-wrapper h3 {
+	color:$beige;
+	@include title-sizing;
+	margin-top:0;
+	margin-bottom:10px;
+	@include min-em(900) {
+		margin-bottom:20px;
+	}
+}
+
+.slider-description {
+	color:$white;
+	font-family: $secondary-font;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+.slider-description a {
+	color:$white;
+	font-size:14px;
+}
+
+
+#homepage-intro p, #homepage-intro span {
+	@include body-copy-sizing;
+	font-family:$body-font;
+	margin-bottom:25px;
+	@include min-em(800) {
+	margin-bottom:30px;
+	}
+}
+
+
+/* About/Team */
+
+
+#team-intro h2 {
+	@include title-sizing;
+    color:$beige;
+    margin-bottom:20px;
+}
+
+
+.director-details {
+	padding-top:40px;
+	padding-bottom:30px;
+}
+
+.director-details p {
+	@include body-copy-sizing;
+	font-family:$body-font;
+	margin-bottom:30px;
+	text-align:left;
+}
+
+
+.director-name {
+	color:$beige;
+	@include title-sizing;
+	margin-bottom:0px;	
+
+}
+
+.director-title {
+	@include title-sizing;
+	color:$white;
+	margin-bottom:10px;
+
+}
+
+.director-more-link span, .director-more-link a {
+	color:$white;
+	text-transform:uppercase;
+	font-family:$secondary-font;
+	font-size:14px;
+}
+
+
+
+#meet-the-team h2 {
+	color:$white;
+	@include title-sizing;
+	margin-top:0;
+	margin-bottom:30px;
+	@include min-em(900) {
+	margin-bottom:40px;
+	}
+}
+
+.director-more-link {
+	margin-bottom:40px;
+}
+
+#team-intro p, #team-intro span  {
+	font-size:15px;
+	font-family:$body-font;
+	margin-bottom:20px;
+}
+
+.member-name {
+	color:$beige;
+	margin-top:0;
+	margin-bottom:0;
+	text-align:center;
+	@include title-sizing;
+	@include min-em(500) {
+	text-align:left;
+	}
+}
+
+.member-title {
+	color:$dark;
+	text-align:center;
+	margin-top:0;
+	margin-bottom:10px;	
+	@include title-sizing;
+	@include min-em(500) {
+	text-align:left;
+	}
+	&#gus-title {
+	color:$beige;
+	}	
+}
+
+.team-member-description p {
+	font-family:$body-font;
+	@include body-copy-sizing;
+	margin-top:0;
+
+}
+
+/* Awards */
+#awards-box span {
+	@include title-sizing;
+	color:$white;
+	margin-bottom:30px;
+
+}
+
+/*  Services  */
+#services-intro h2 {
+	@include title-sizing;
+    color:$beige;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+#services-intro p, .service-details p {
+	@include body-copy-sizing;
+	margin-bottom: 20px;
+	margin-top:0;
+}
+
+#services-list .service-type {
+	@include title-sizing;
+	color: $white;
+	margin-bottom:0;
+}
+
+.service-read-more a  {
+  color:$white;
+}
+
+.service-read-more a span {
+  color:$white;
+  text-transform:uppercase;
+  font-family:$secondary-font;
+  font-size:14px;
+}
+
+#services-intro p a, #architecture-intro p a, #design-intro p a {
+	color:$beige;
+	font-weight:bold;
+}
+
+/* Contact */
+#address p {
+	color:$white;
+	text-align:center;
+	@include min-em(800) {
+	text-align:left;
+
+	}
+}
+
+#contact-intro h2 {
+	@include title-sizing;
+	color:$beige;
+	margin-top:0;
+}
+
+#contact-description {
+	margin-bottom:30px;	
+	@include min-em(800) {
+	margin-bottom:0px;	
+	}
+}
+
+#contact-form span.wpcf7-not-valid-tip {
+	font-family:$body-font;
+	color:$white;
+}
+
+#contact-form  div.wpcf7-response-output  {
+	border: 2px solid $white;
+	color:$white;
+}
+
+#contact-form div.wpcf7-mail-sent-ok {
+	color:#fff; 
+	border: 2px solid #ffffff;
+}
+
+#contact-description p {
+@include body-copy-sizing;
+text-align:left;
+margin-top:0;
+}
+
+
+#contact-form p, #contact-form a  {
+	text-align:left;
+	color:#fff;
+	font-family:$body-font;
+	margin:0;
+	font-size:14px;
+}
+
+#contact-form-phone {
+	text-decoration:none;
+	font-weight:bold;
+}
+
+div.wpcf7 .ajax-loader {
+background-image: url('_/img/icons/ajax-loader.gif');
+width: 100%;
+height: 16px;
+
+background-repeat:no-repeat;
+background-position: 50%;
+margin-top:5px;
+}
+
+#address a {
+	color:$white;
+		text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#address {
+	.company-name {
+		font-family:$title-font;
+		color:$beige;
+		font-size:20px;
+		margin-top:30px;
+		margin-bottom:5px;
+
+		@include min-em(870) {
+		margin-top:0px;
+		margin-bottom:5px;
+		}
+
+		@include min-em(1000) {
+		font-size:35px;
+		line-height:45px;
+		margin-top:0;
+		margin-bottom:0;
+		}
+	}	
+	.address {
+		font-family:$title-font;
+		color:$white;
+		margin-top:0px;
+		margin-bottom:5px;
+
+		@include min-em(870) {
+		}
+
+		@include min-em(1000) {
+		font-size:35px;
+		line-height:45px;
+		margin-top:0;
+		margin-bottom:10px;
+		}
+	}	
+	.tel {
+		color:$white;
+		font-family:$secondary-font;
+		margin-top:0px;
+		margin-bottom:5px;
+
+		@include min-em(870) {
+		}
+
+		@include min-em(1000) {
+		margin-top:0;
+		margin-bottom:5px;
+		font-size:14px;
+		}
+	}	
+	.email {
+		color:$white;
+		font-family:$secondary-font;
+		margin-top:0px;
+		margin-bottom:15px;
+
+		@include min-em(870) {
+		}
+
+		@include min-em(1000) {
+		margin-top:0;
+		margin-bottom:30px;
+		font-size:14px;
+		}
+	}	
+	.press-enquiries {
+		font-family:$title-font;
+		color:$white;
+		font-size:20px;
+		margin-top:0px;
+		margin-bottom:5px;
+
+		@include min-em(870) {
+		}
+
+		@include min-em(1000) {
+		font-size:35px;
+		margin-top:0;
+		margin-bottom:15px;
+		}
+	}	
+	.press-text {
+		color:$white;
+		font-family:$secondary-font;
+		margin-top:0px;
+		margin-bottom:5px;
+		font-size:14px;
+		@include min-em(870) {
+		}
+
+		@include min-em(1000) {
+		margin-top:0;
+		margin-bottom:5px;
+		}
+	}	
+}
+
+
+#contact-description p a {
+	color:$beige;
+	font-weight:bold;
+}
+
+
+/* Portfolio / Properties */
+#portfolio-intro p {
+	color:$white;
+	@include title-sizing;
+	
+}
+
+#portfolio-3d p {
+	@include body-copy-sizing;
+	font-family: $body-font;
+}
+
+.portfolio-text-block p {
+	@include body-copy-sizing;
+	font-family: $body-font;
+}
+
+.property-link {
+	color:$white;
+	font-family:$title-font;
+	font-size:20px;
+	line-height:25px;
+	transition:0.3s;
+	@include min-em(700) {
+	font-size:30px;
+	line-height:35px;
+	}
+	&:hover {
+	color:darken($white, 20%)
+	}
+}
+
+.portfolio-testimonials h2 {
+	color:$white;
+	@include title-sizing;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+
+.testimonial-exerpt {
+	@include title-sizing;
+	color:$beige;
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+.testimonial-full {
+	margin-top:0;
+	padding-top:0;
+	font-family: $body-font;
+	@include body-copy-sizing;
+}
+
+#cta-bar h2 {
+	color:$white;
+	@include title-sizing;
+	font-family:$title-font;
+}
+
+
+
+/* Blog */ 
+
+.blog-article-box a {
+	color:$beige;
+	font-family: $title-font;
+	text-decoration:none;
+	&:hover {
+		text-decoration: underline;
+	}
+
+	h2 {
+		font-size:30px;
+		margin-bottom:10px;
+		margin-top:30px;
+		box-sizing:border-box;
+		padding:0 20px;
+		@include min-em(600){
+		margin-top:50px;
+		}
+	}
+}
+
+h2#post-title {
+	margin-top:30px;
+	margin-bottom:20px;
+	@include min-em(800) {
+	margin-top:60px;	
+	margin-bottom:40px;
+	font-size:30px;
+	line-height:35px;
+	}
+}
+
+#blog-content p, #blog-content ul, #blog-content ol{
+	margin-bottom:20px;
+	@include min-em(800) {
+	margin-bottom:40px;
+	}
+}
+
+#blog-content a {
+	color: $beige;
+}
+
+#blog-nav li {
+  color:$white;
+}
+
+
+#page-blog-post #blog-content h1, #page-blog-post #blog-content h2 {
+	color:$beige;
+	@include title-sizing;
+}
+
+#page-blog-post #blog-content h3 {
+	color:$beige;
+	font-size:22px;
+	font-family: $title-font;
+}
+
+#page-blog-post #blog-content li {
+	@include body-copy-sizing;
+}
+
+.blog-article-box p {
+	@include body-copy-sizing;
+	width:90%;
+	padding:0 5%;
+	margin:0 auto 30px auto;
+}
+
+#page-blog-post #blog-content p {
+	@include body-copy-sizing;
+}
+
+#no-results-box h2 { 
+	font-family:$title-font;
+	@include title-sizing;
+	color:$beige;
+}
+
+[class*=" mashicon-"] .text, [class^=mashicon-] .text {
+	font-size:14px;
+}
+
+
+/* Footer */
+#social-email h3 {
+	color:$white;
+	font-size:16px;
+	font-family:$secondary-font;
+}
+
+#social-networks h3 {
+	color:$dark;
+	font-size:16px;
+	font-family:$secondary-font;
+}
+
+#footer-link-list a {
+	color:$white;
+	text-transform:uppercase;
+	font-size:12px;
+	font-family:$secondary-font;
+	text-decoration:none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+#footer-link-list li {
+	line-height: 12px;
+}
+
+#footer-info-list li, #footer-address  {
+	color:$white;
+	opacity:0.5;
+	font-size:12px;
+	font-family:$secondary-font;
+	text-decoration:none;
+}
+
+#footer-info-list a {
+	text-decoration:none;
+	color:$white;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+
+#cookies-banner p {
+	color:$white;
+	font-size:14px;
+}
+
+#cookies-banner a {
+	color:$white;
+	font-size:14px;
+}
+
+#cookies-accept {
+	padding:10px 0px;
+	background-color: $dark;
+	text-transform: uppercase;
+	clear:both;
+	display:block;
+	width:75px;
+	margin:0 auto;
+	margin-top:15px;
+	transition:0.4s;
+	&:hover {
+	background-color:lighten($dark, 10%);
+	}
+}

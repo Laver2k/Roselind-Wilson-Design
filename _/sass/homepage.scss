@@ -1,0 +1,96 @@
+#homepage-intro {
+  padding:20px 0 30px 0;
+  @include min-em(620) {
+  padding:40px 0 60px 0;
+  }
+  p {
+    margin-top:0;
+  }
+}
+
+
+
+/* Interior design */
+#homepage-interior-design {
+  width:100%;
+  background-color:$white;
+  overflow:auto;
+  .left {
+    @include min-em(870) {
+      width:50%;
+      float:left;
+    }
+  }
+  .right {
+    text-align:center;
+    padding:40px 0;
+
+    @include min-em(870) {
+      width:50%;
+      float:left;
+      padding: 0;
+      text-align:left;
+    }
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-sizing:border-box;
+    //padding:20px;
+  }
+  img {
+    max-width:100%;
+    width: 100%;
+  }
+}
+
+.no-flexbox #homepage-interior-design .right {
+  padding:20px;
+  box-sizing:border-box;
+
+  h3 div {
+    width:100%;
+  }
+}
+
+/* Blog preview */
+#homepage-blog-preview {
+  background-color:$dark; 
+  text-align:center;
+  margin:30px auto 40px auto;
+
+  @include min-em(600){
+  margin:30px auto 80px auto;
+  }
+
+    img {
+      width:100%;
+      height:auto;
+      @include min-em(1000) {
+        width:1000px;
+      }
+    }
+}
+
+#homepage-excerpt-wrapper {
+  background-color:$white; 
+  margin: -100px auto 0 auto;
+  text-align:center;
+  padding: 40px 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  width:90%;
+  @include min-em(950) {
+  padding: 40px 25px;
+  margin: -80px 25px 0 25px;
+  max-width:950px;
+  }
+}
+
+
+/* Featured in */
+#homepage-featured-in {
+  background-color:$dirty-white;
+  text-align: center;
+
+}
